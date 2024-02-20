@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-da-5-entrance">
+        <li class="text">DA 5 ENTRANCE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-da5-entrance-11">
+        <li class="text">DA5 ENTRANCE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-admin-and-operation-building">
+        <li class="text">ADMIN AND OPERATION BUILDING</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-da5-left-side">
+        <li class="text">DA5 LEFT SIDE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-da5-right-side">
+        <li class="text">DA5 RIGHT SIDE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-regional-nursery-12">
+        <li class="text">REGIONAL NURSERY 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-regional-nursery">
+        <li class="text">REGIONAL NURSERY</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-to-regional-nursery-11">
+        <li class="text">TO REGIONAL NURSERY 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-to-regional-nursery">
+        <li class="text">TO REGIONAL NURSERY</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-kadiwa">
+        <li class="text">KADIWA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-cam-sur-provincial-fishiries-office-13">
+        <li class="text">CAM SUR PROVINCIAL FISHIRIES OFFICE 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-cam-sur-provincial-fishiries-office-12">
+        <li class="text">CAM SUR PROVINCIAL FISHIRIES OFFICE 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-cam-sur-provincial-fishiries-office-11">
+        <li class="text">CAM SUR PROVINCIAL FISHIRIES OFFICE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-cam-sur-provincial-fishiries-office">
+        <li class="text">CAM SUR PROVINCIAL FISHIRIES OFFICE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-da-5-exit-13">
+        <li class="text">DA 5 EXIT 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-da-5-exit">
+        <li class="text">DA 5 EXIT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-crop-research-building-rice-r--d-center">
+        <li class="text">CROP RESEARCH BUILDING RICE R &amp; D CENTER</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-crop-research-building-left-side">
+        <li class="text">CROP RESEARCH BUILDING LEFT SIDE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-staff-cottages-14">
+        <li class="text">STAFF COTTAGES 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-staff-cottages-13">
+        <li class="text">STAFF COTTAGES 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-staff-cottages-12">
+        <li class="text">STAFF COTTAGES 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-da-5-chapel">
+        <li class="text">DA 5 CHAPEL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-staff-cottages-11">
+        <li class="text">STAFF COTTAGES 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-staff-cottages">
+        <li class="text">STAFF COTTAGES</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-central-bicol-experiment-station">
+        <li class="text">CENTRAL BICOL EXPERIMENT STATION</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-prtmdc-5">
+        <li class="text">PRTMDC 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-regulatory-11">
+        <li class="text">REGULATORY 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-regulatory">
+        <li class="text">REGULATORY</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-cebes-12">
+        <li class="text">CEBES 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-cebes-11">
+        <li class="text">CEBES 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-da-5-exit-right-side">
+        <li class="text">DA 5 EXIT RIGHT SIDE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-da-5-exit-11">
+        <li class="text">DA 5 EXIT 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-da-5-exit-left-side">
+        <li class="text">DA 5 EXIT LEFT SIDE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-cbes">
+        <li class="text">CBES</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-da-5-dormitel-11">
+        <li class="text">DA 5 DORMITEL 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-da-5-dormitel">
+        <li class="text">DA 5 DORMITEL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-ild-18">
+        <li class="text">ILD 1.8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-ild-17">
+        <li class="text">ILD 1.7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-ild-16">
+        <li class="text">ILD 1.6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-ild-15">
+        <li class="text">ILD 1.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-ild-14">
+        <li class="text">ILD 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-ild-13">
+        <li class="text">ILD 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-ild-12">
+        <li class="text">ILD 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-hvc-experimental-area-14">
+        <li class="text">HVC EXPERIMENTAL AREA 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-hvc-experimental-area-13">
+        <li class="text">HVC EXPERIMENTAL AREA 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-hvc-experimental-area-12">
+        <li class="text">HVC EXPERIMENTAL AREA 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-hvc-experimental-area-11">
+        <li class="text">HVC EXPERIMENTAL AREA 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-hvc-experimental-area">
+        <li class="text">HVC EXPERIMENTAL AREA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-ild-11">
+        <li class="text">ILD 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-ild">
+        <li class="text">ILD</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-raed">
+        <li class="text">RAED</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-rice-seed-production-area-42">
+        <li class="text">RICE SEED PRODUCTION AREA 4.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-rice-seed-production-area-41">
+        <li class="text">RICE SEED PRODUCTION AREA 4.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-goat--sheep-production-13">
+        <li class="text">GOAT &amp; SHEEP PRODUCTION 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-goat--sheep-production-12">
+        <li class="text">GOAT &amp; SHEEP PRODUCTION 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-goat--sheep-production-11">
+        <li class="text">GOAT &amp; SHEEP PRODUCTION 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-goat--sheep-production">
+        <li class="text">GOAT &amp; SHEEP PRODUCTION</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-large-ruminant-development-area-17">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-large-ruminant-development-area-16">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-large-ruminant-development-area-15">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-large-ruminant-development-area-14">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-organic-rice-production-area-22">
+        <li class="text">ORGANIC RICE PRODUCTION AREA 2.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-organic-rice-production-area-21">
+        <li class="text">ORGANIC RICE PRODUCTION AREA 2.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-rice-seed-production-area-35">
+        <li class="text">RICE SEED PRODUCTION AREA 3.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-rice-seed-production-area-34">
+        <li class="text">RICE SEED PRODUCTION AREA 3.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-rice-seed-production-area-33">
+        <li class="text">RICE SEED PRODUCTION AREA 3.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-rice-seed-production-area-32">
+        <li class="text">RICE SEED PRODUCTION AREA 3.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-rice-seed-production-area-31">
+        <li class="text">RICE SEED PRODUCTION AREA 3.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-rice-seed-production-area-26">
+        <li class="text">RICE SEED PRODUCTION AREA 2.6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-rice-seed-production-area-25">
+        <li class="text">RICE SEED PRODUCTION AREA 2.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-rice-seed-production-area-24">
+        <li class="text">RICE SEED PRODUCTION AREA 2.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-rice-seed-production-area-23">
+        <li class="text">RICE SEED PRODUCTION AREA 2.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-large-ruminant-development-area-13">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-large-ruminant-development-area-12">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-large-ruminant-development-area-11">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-large-ruminant-development-area-">
+        <li class="text">LARGE RUMINANT DEVELOPMENT AREA </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-da-5-back-gate-18">
+        <li class="text">DA 5 BACK GATE 1.8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-da-5-back-gate-17">
+        <li class="text">DA 5 BACK GATE 1.7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-da-5-back-gate-16">
+        <li class="text">DA 5 BACK GATE 1.6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-da-5-back-gate-15">
+        <li class="text">DA 5 BACK GATE 1.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-da-5-back-gate-14">
+        <li class="text">DA 5 BACK GATE 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-da-5-back-gate-13">
+        <li class="text">DA 5 BACK GATE 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-da-5-back-gate-12">
+        <li class="text">DA 5 BACK GATE 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-da-5-back-gate-11">
+        <li class="text">DA 5 BACK GATE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-da-5-back-gate">
+        <li class="text">DA 5 BACK GATE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-rice-seed-production-area-22">
+        <li class="text">RICE SEED PRODUCTION AREA 2.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-rice-seed-production-area-21">
+        <li class="text">RICE SEED PRODUCTION AREA 2.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-poultry-production-area-13">
+        <li class="text">POULTRY PRODUCTION AREA 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-poultry-production-area-12">
+        <li class="text">POULTRY PRODUCTION AREA 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-poultry-production-area-11">
+        <li class="text">POULTRY PRODUCTION AREA 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-poultry-production-area">
+        <li class="text">POULTRY PRODUCTION AREA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-organic-rice-production-area-12">
+        <li class="text">ORGANIC RICE PRODUCTION AREA 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-organic-rice-production-area-11">
+        <li class="text">ORGANIC RICE PRODUCTION AREA 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-organic-rice-production-area">
+        <li class="text">ORGANIC RICE PRODUCTION AREA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-rice-seed-production-area-16">
+        <li class="text">RICE SEED PRODUCTION AREA 1.6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-rice-seed-production-area-15">
+        <li class="text">RICE SEED PRODUCTION AREA 1.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-rice-seed-production-area-14">
+        <li class="text">RICE SEED PRODUCTION AREA 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-cacao-rnd-center">
+        <li class="text">CACAO RND CENTER</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-rice-seed-production-area-13">
+        <li class="text">RICE SEED PRODUCTION AREA 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-rice-seed-production-area-12">
+        <li class="text">RICE SEED PRODUCTION AREA 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-rice-seed-production-area-11">
+        <li class="text">RICE SEED PRODUCTION AREA 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-rice-seed-production-area">
+        <li class="text">RICE SEED PRODUCTION AREA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-rail">
+        <li class="text">RAIL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-rice-experiment-area-15">
+        <li class="text">RICE EXPERIMENT AREA 1.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-rice-experiment-area-14">
+        <li class="text">RICE EXPERIMENT AREA 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-rice-experiment-area-13">
+        <li class="text">RICE EXPERIMENT AREA 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106-rice-experiment-area-12">
+        <li class="text">RICE EXPERIMENT AREA 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107-rice-experiment-area-11">
+        <li class="text">RICE EXPERIMENT AREA 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108-rice-experiment-area-">
+        <li class="text">RICE EXPERIMENT AREA </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-pili-production-12">
+        <li class="text">PILI PRODUCTION 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-pili-production-11">
+        <li class="text">PILI PRODUCTION 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="111-pili-production">
+        <li class="text">PILI PRODUCTION</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="112-gender-and-development-building">
+        <li class="text">GENDER AND DEVELOPMENT BUILDING</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="113-research-division-11">
+        <li class="text">RESEARCH DIVISION 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="114-research-division">
+        <li class="text">RESEARCH DIVISION</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115-gss-">
+        <li class="text">GSS </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116-crop-research-building-right-side-11">
+        <li class="text">CROP RESEARCH BUILDING RIGHT SIDE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117-da5-covered-court">
+        <li class="text">DA5 COVERED COURT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-crop-research-building-right-side">
+        <li class="text">CROP RESEARCH BUILDING RIGHT SIDE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="119-da5-left-side-12">
+        <li class="text">DA5 LEFT SIDE 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-da5-left-side-11">
+        <li class="text">DA5 LEFT SIDE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121-rcmc-11">
+        <li class="text">RCMC 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122-rcmc">
+        <li class="text">RCMC</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-da5-right-side-12">
+        <li class="text">DA5 RIGHT SIDE 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124-da5-right-side-11">
+        <li class="text">DA5 RIGHT SIDE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="125-regional-nursery-13">
+        <li class="text">REGIONAL NURSERY 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="126-regional-nursery-14">
+        <li class="text">REGIONAL NURSERY 1.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="127-regional-nursery-15">
+        <li class="text">REGIONAL NURSERY 1.5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="128-crop-research-building-left-side-11">
+        <li class="text">CROP RESEARCH BUILDING LEFT SIDE 1.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="129-crop-research-building-inside">
+        <li class="text">CROP RESEARCH BUILDING INSIDE</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
